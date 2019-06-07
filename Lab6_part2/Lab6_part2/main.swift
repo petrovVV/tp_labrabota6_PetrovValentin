@@ -11,8 +11,6 @@ import Foundation
 var Map:[Character: Int]=[:]
 
 var tmp="Something strange";
-tmp = tmp.replacingOccurrences(of: "[\\s\n]+", with: " ");
-tmp = tmp.lowercased();
 
 for index in tmp{
     Map[index]=(Map[index] ?? 0) + 1
